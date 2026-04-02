@@ -13,6 +13,7 @@ test_that("create_project with path creates full structure and scaffolding", {
   expect_true(file.exists(file.path(root, "test-proj.Rproj")))
   expect_true(file.exists(file.path(root, ".gitignore")))
   expect_true(file.exists(file.path(root, "README.md")))
+  expect_true(file.exists(file.path(root, "01_.R")))
 })
 
 test_that("create_project without path creates subdirs in current directory", {
@@ -30,6 +31,7 @@ test_that("create_project without path creates subdirs in current directory", {
     expect_true(dir.exists(file.path(tmp, "output", "numbers")))
     expect_false(file.exists(file.path(tmp, ".Rproj")))
     expect_false(file.exists(file.path(tmp, "README.md")))
+    expect_true(file.exists(file.path(tmp, "01_.R")))
   })
 })
 

@@ -131,6 +131,32 @@ create_project <- function(name = NULL, path = NULL) {
     )
   }
 
+  writeLines(
+    c(
+      "# Load Packages ----------------------------------------------------------",
+      "",
+      "",
+      "",
+      "# Define Custom Functions ------------------------------------------------",
+      "",
+      "",
+      "",
+      "# Load Data --------------------------------------------------------------",
+      "",
+      "",
+      "",
+      "# Analyze ----------------------------------------------------------------",
+      "",
+      "",
+      "",
+      "# Save Output ------------------------------------------------------------",
+      "",
+      "",
+      ""
+    ),
+    file.path(root, "01_.R")
+  )
+
   label <- if (!is.null(name)) name else basename(root)
   message("Project '", label, "' created at: ", normalizePath(root))
   invisible(root)
