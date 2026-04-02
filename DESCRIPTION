@@ -1,0 +1,13 @@
+Package: poliscitools
+Title: Tools for Quantitative Political Science
+Version: 0.0.1
+Authors@R: person("Niklas", "Hahn", role = c("aut", "cre"))
+Description: A collection of tools for quantitative political science research,
+    including project setup utilities and analysis helpers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
